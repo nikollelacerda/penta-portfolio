@@ -1,0 +1,59 @@
+$text-font:"Libre Caslon Display", serif;
+$title-font:"Major Mono Display", serif;
+$manuscript-title-font:"Pinyon Script", serif;
+
+
+.feat-proj {
+    margin-top: 20px;
+    h3{
+        font-family: $text-font;
+    }
+    .section-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .row {
+        margin-bottom: 40px;
+
+        .project-title {
+            h1 {
+                margin: 0;
+                line-height: 1.5;
+                font-family: $manuscript-title-font;
+                letter-spacing: 2px;
+                text-align: center;
+            }
+        }
+
+        p {
+            font-size: 23px;
+            line-height: 1.6;
+            margin-top: 0;
+            font-family: $text-font;
+            text-align: justify;
+        }
+
+        .img img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .view-all {
+        text-align: center;
+        margin-top: 20px;
+
+        a {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #2196f3;
+
+            &:hover {
+                color: #0d47a1;
+            }
+        }
+    }
+}

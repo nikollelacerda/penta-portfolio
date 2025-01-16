@@ -1,0 +1,11 @@
+.parallax-container {
+    position: relative;
+    height: 500px; /* Ajuste conforme necessário */
+}
+
+.parallax img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
