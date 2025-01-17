@@ -49,7 +49,9 @@ const FeatureProjects = () => {
                         <h4 className='col s4 m4 l4 project-title'>fora da caixa</h4>
                     </div>
                 </div>
-                <div></div>
+                <div className="projects-page-link">
+                    <a>View more projects</a>
+                </div>
             </div>
         </div>
     );
