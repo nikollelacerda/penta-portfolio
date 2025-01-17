@@ -26,9 +26,9 @@ const Navbar = () => {
 
                     {/* Navbar Links */}
                     <ul id="nav-mobile" className="right hide-on-med-and-down col s8 m8 l8">
-                        <li><a href="sass.html">HOME</a></li>
-                        <li><a href="badges.html">PROJECTS</a></li>
-                        <li><a href="collapsible.html">CONTACT</a></li>
+                        <li><a href="sass.html">Sass</a></li>
+                        <li><a href="badges.html">Components</a></li>
+                        <li><a href="collapsible.html">JavaScript</a></li>
                     </ul>
                 </div>
             </div>

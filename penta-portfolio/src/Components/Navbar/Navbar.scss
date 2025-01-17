@@ -1,35 +1,36 @@
-$text-font:"Libre Caslon Display", serif;
-
 .navbar {
     background-color: #ffffff; // Fundo branco
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Adiciona uma leve sombra para separação visual
-
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra para separação
+    height: 64px; // Define uma altura fixa e padrão para a navbar
+  
     .nav-wrapper {
       display: flex;
       align-items: center;
-      padding: 0 15px;
-  
+      height: 100%; 
       .brand-logo {
+        display: flex;
         align-items: center;
+        height: 100%; 
   
         .logo-img {
-          height: 100px;
-          width: auto;
+          max-height: 48px;
+          width: auto; 
+          object-fit:cover; 
         }
-     }
+      }
     }
   
     ul#nav-mobile {
       display: flex;
       justify-content: flex-end;
+      align-items: center;
+  
       li a {
-        padding-left:30px;
         color: black !important;
-        font-size: 20px;
-        margin-left: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 20px; // Espaçamento entre os links
         transition: color 0.3s;
-        font-family: $text-font;
-        letter-spacing: 1px;
   
         &:hover {
           color: #007bff; // Cor ao passar o mouse (opcional)
