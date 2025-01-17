@@ -1,1 +1,3 @@
-# penta-portfolio
+# PENTA Portfolio
+
+Projects dedicated to PENTA.
