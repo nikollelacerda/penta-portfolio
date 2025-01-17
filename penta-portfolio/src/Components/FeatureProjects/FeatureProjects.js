@@ -50,7 +50,7 @@ const FeatureProjects = () => {
                     </div>
                 </div>
                 <div className="projects-page-link">
-                    <a>View more projects</a>
+                    <a href='#!'>View more projects</a>
                 </div>
             </div>
         </div>

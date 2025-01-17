@@ -23,7 +23,23 @@ $text-font: "Quicksand", serif;
     height: 350px;
 }
 
-.projects-page-link {
-    text-align: center;
+.projects-page-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:25px;
+    padding:0;
     font-family: $text-font;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: grey;
+    }
+
+    &:focus,
+    &:active,
+    &:visited {
+        color: grey;
+    }
 }
