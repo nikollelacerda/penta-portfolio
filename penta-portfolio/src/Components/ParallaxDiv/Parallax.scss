@@ -1,6 +1,10 @@
+$title-font: "Lexend Giga", serif;
+$text-font: "Quicksand", serif;
+$simple-shadow:rgba(119, 119, 119, 0.15);
+
 .parallax-container {
     position: relative;
-    height: 500px; /* Ajuste conforme necessário */
+    height: 500px;
 }
 
 .parallax img {
@@ -8,4 +12,18 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+h3 {
+    font-family: $title-font;
+}
+
+.text-about{
+    font-family: $text-font;
+}
+
+.about-us-text {
+    box-shadow: 
+    0 -4px 6px $simple-shadow,
+    0 4px 6px $simple-shadow;
 }
