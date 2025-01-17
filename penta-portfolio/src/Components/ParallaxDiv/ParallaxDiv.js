@@ -22,7 +22,7 @@ const ParallaxDiv = () => {
                 </div>
             </div>
 
-            <div className="section white">
+            <div className="section white about-us-text">
                 <div className="row container">
                     <h3 className="header title">about us</h3>
                     <div className='text-about grey-text text-darken-3 lighten-3'>
