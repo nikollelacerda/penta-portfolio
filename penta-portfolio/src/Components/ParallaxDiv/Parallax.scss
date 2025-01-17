@@ -1,3 +1,6 @@
+$title-font: "Lexend Giga", serif;
+$text-font: "Quicksand", serif;
+
 .parallax-container {
     position: relative;
     height: 500px; /* Ajuste conforme necessário */
@@ -8,4 +11,12 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+h3 {
+    font-family: $title-font;
+}
+
+.text-about{
+    font-family: $text-font;
 }
