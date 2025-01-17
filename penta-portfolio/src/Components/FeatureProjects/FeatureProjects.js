@@ -34,7 +34,7 @@ const FeatureProjects = () => {
 
                 {/* Coluna 3 - Imagem */}
                 <div className="col s4 m4 l4 img">
-                    <img src="/images/imgOne.jpg" alt="Project Example" />
+                    <img src="/images/carousel/imgOne.jpg" alt="Project Example" />
                 </div>
             </div>
 
@@ -57,7 +57,7 @@ const FeatureProjects = () => {
 
                 {/* Coluna 2 - Imagem */}
                 <div className="col s4 m4 l4 img">
-                    <img src="/images/imgOne.jpg" alt="Project Example 2" />
+                    <img src="/images/carousel/imgOne.jpg" alt="Project Example 2" />
                 </div>
 
                 {/* Coluna 3 - Título */}

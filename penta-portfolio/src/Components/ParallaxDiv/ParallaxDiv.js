@@ -16,7 +16,7 @@ const ParallaxDiv = () => {
             <div className="parallax-container" style={{ height: '500px' }}>
                 <div className="parallax">
                     <img 
-                        src="/images/parallaxImg.jpg" 
+                        src="/images/parallax/parallaxImg.jpg" 
                         alt="Parallax Background 1" 
                     />
                 </div>
@@ -37,7 +37,7 @@ const ParallaxDiv = () => {
             <div className="parallax-container" style={{ height: '500px' }}>
                 <div className="parallax">
                     <img 
-                        src="/images/imgOne.jpg" 
+                        src="/images/carousel/imgOne.jpg" 
                         alt="Parallax Background 2" 
                     />
                 </div>

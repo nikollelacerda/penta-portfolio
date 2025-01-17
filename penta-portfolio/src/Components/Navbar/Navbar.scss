@@ -1,0 +1,40 @@
+$text-font:"Libre Caslon Display", serif;
+
+.navbar {
+    background-color: #ffffff; // Fundo branco
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Adiciona uma leve sombra para separação visual
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+  
+      .brand-logo {
+        align-items: center;
+  
+        .logo-img {
+          height: 100px;
+          width: auto;
+        }
+     }
+    }
+  
+    ul#nav-mobile {
+      display: flex;
+      justify-content: flex-end;
+      li a {
+        padding-left:30px;
+        color: black !important;
+        font-size: 20px;
+        margin-left: 20px;
+        transition: color 0.3s;
+        font-family: $text-font;
+        letter-spacing: 1px;
+  
+        &:hover {
+          color: #007bff; // Cor ao passar o mouse (opcional)
+        }
+      }
+    }
+  }
+  
