@@ -1,0 +1,25 @@
+$title-font: "Lexend Giga", serif;
+$text-font: "Quicksand", serif;
+$simple-shadow:rgba(119, 119, 119, 0.15);
+
+.page-footer {
+    background-color: white;
+    box-shadow: 
+    0 -4px 6px $simple-shadow,
+    0 4px 6px $simple-shadow;
+    h5 {
+        font-family: $title-font;
+        color:black;
+    }
+
+    p, a {
+        font-family: $text-font;
+        color:black;
+    }
+}
+
+.copyright {
+    background-color: black;
+    color:white;
+    font-family: $text-font;
+}
