@@ -1,59 +1,45 @@
-$text-font:"Libre Caslon Display", serif;
-$title-font:"Major Mono Display", serif;
-$manuscript-title-font:"Pinyon Script", serif;
+$title-font: "Lexend Giga", serif;
+$text-font: "Quicksand", serif;
 
+.projects-page-title {
+    font-family: $title-font;
+    text-align: right;
+    margin: 50px 400px 50px 0;
+    font-weight: bold;
+}
 
-.feat-proj {
-    margin-top: 20px;
-    h3{
-        font-family: $text-font;
-    }
-    .section-title {
-        text-align: center;
-        margin-bottom: 30px;
-    }
+.project-title {
+    font-family: $title-font;
+    font-size: 60px;
+    margin-top:0;
+}
 
-    .row {
-        margin-bottom: 40px;
+.project-text {
+    font-family: $text-font;
+    text-align: justify;
+}
 
-        .project-title {
-            h1 {
-                margin: 0;
-                line-height: 1.5;
-                font-family: $manuscript-title-font;
-                letter-spacing: 2px;
-                text-align: center;
-            }
-        }
+.project-img {
+    height: 350px;
+}
 
-        p {
-            font-size: 23px;
-            line-height: 1.6;
-            margin-top: 0;
-            font-family: $text-font;
-            text-align: justify;
-        }
+.projects-page-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:25px;
+    padding:0;
+    font-family: $text-font;
+    text-decoration: none;
+    transition: color 0.3s ease;
 
-        .img img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
+    &:hover {
+        color: grey;
     }
 
-    .view-all {
-        text-align: center;
-        margin-top: 20px;
-
-        a {
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            color: #2196f3;
-
-            &:hover {
-                color: #0d47a1;
-            }
-        }
+    &:focus,
+    &:active,
+    &:visited {
+        color: grey;
     }
 }
