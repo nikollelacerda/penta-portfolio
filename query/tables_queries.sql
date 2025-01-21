@@ -1,0 +1,21 @@
+CREATE TABLE company (
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(255) NOT NULL,
+	description TEXT,
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE contacts (
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(100) NOT NULL,
+	link TEXT NOT NULL
+);
+
+CREATE TABLE projects (
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(255) NOT NULL, 
+	type VARCHAR(100) NOT NULL,
+	description TEXT NOT NULL,
+	images TEXT[]
+);
+
