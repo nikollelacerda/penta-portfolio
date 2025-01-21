@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import "./Navbar.scss";
@@ -16,7 +16,7 @@ const Navbar = () => {
           <div>
             <div class="nav-wrapper navbar">
               <Link to="/" className="brand-logo">
-                <img src="/images/logo/logoPenta.png" className="logo-img"></img>
+                <img src="/images/logo/logoPenta.png" className="logo-img" alt="Penta Logo"></img>
               </Link>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><Link to="/">Home</Link></li>

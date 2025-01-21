@@ -5,52 +5,49 @@ import './FeatureProjects.scss';
 const FeatureProjects = () => {
     return (
         <div className="projects-page">
-            <div className='title-projects'>
-                <h3 className='projects-page-title'>PROJECTS</h3>
+            <div className="title-projects">
+                <h3 className="projects-page-title">projects</h3>
             </div>
-            <div className='projects-preview'>
-                <div className='container'>
-                    <div className='row'>
-                        <h4 
-                            className='col s4 m4 l4 project-title' 
-                            style={{textAlign:"right"}}>
-                                doctor luciano gazzoni
-                        </h4>
-                        <p className='col s4 m4 l4 project-text'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum 
-                            euismod ipsum ut pellentesque. Sed porta leo neque, sit amet placerat tortor 
-                            venenatis bibendum. Fusce mattis scelerisque aliquam. Curabitur feugiat mi quis 
-                            dolor volutpat, sit amet viverra neque maximus. Pellentesque quis tellus ullamcorper 
-                            nunc dapibus fringilla in tincidunt dolor.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum 
-                            euismod ipsum ut pellentesque. Sed porta leo neque, sit amet placerat tortor 
-                            venenatis bibendum. Fusce mattis scelerisque aliquam. Curabitur feugiat mi quis 
-                            dolor volutpat, sit amet viverra neque maximus. Pellentesque quis tellus ullamcorper 
-                            nunc dapibus fringilla in tincidunt dolor.
-                        </p>
-                        <img className='col s4 m4 l4 project-img' src='/images/projects/projectsPageImg1.png'></img>
+            <div className="projects-preview">
+                <div className="container">
+                    <div className="row">
+                        <div className="col s12 m6 l6 project-one-content">
+                            <h4 className="project-title">Project One</h4>
+                            <p className="project-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum 
+                                euismod ipsum ut pellentesque. Sed porta leo neque, sit amet placerat tortor 
+                                venenatis bibendum. Fusce mattis scelerisque aliquam. Curabitur feugiat mi quis 
+                                dolor volutpat, sit amet viverra neque maximus. Pellentesque quis tellus ullamcorper 
+                                nunc dapibus fringilla in tincidunt dolor.
+                            </p>
+                            <button className="btn">Saber mais</button>
+                        </div>
+                        <div className="col s12 m6 l6">
+                            <img className="project-img" src="/images/projects/projectsPageImg1.png" alt="Project One" />
+                        </div>
                     </div>
                 </div>
-                <div className='container'>
-                    <div className='row'>
-                        <p className='col s4 m4 l4 project-text'>
+
+                <div className="container">
+                    <div className="row">
+                        <div className="col s12 m6 l6">
+                            <img className="project-img" src="/images/projects/projectsPageImg2.png" alt="Project Two" />
+                        </div>
+                        <div className="col s12 m6 l6 project-two-content">
+                            <h4 className="project-title">Project Two</h4>
+                            <p className="project-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum 
                                 euismod ipsum ut pellentesque. Sed porta leo neque, sit amet placerat tortor 
                                 venenatis bibendum. Fusce mattis scelerisque aliquam. Curabitur feugiat mi quis 
                                 dolor volutpat, sit amet viverra neque maximus. Pellentesque quis tellus ullamcorper 
                                 nunc dapibus fringilla in tincidunt dolor.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum 
-                                euismod ipsum ut pellentesque. Sed porta leo neque, sit amet placerat tortor 
-                                venenatis bibendum. Fusce mattis scelerisque aliquam. Curabitur feugiat mi quis 
-                                dolor volutpat, sit amet viverra neque maximus. Pellentesque quis tellus ullamcorper 
-                                nunc dapibus fringilla in tincidunt dolor.
-                        </p>
-                        <img className='col s4 m4 l4 project-img' src='/images/projects/projectsPageImg2.png'></img>
-                        <h4 className='col s4 m4 l4 project-title'>fora da caixa</h4>
+                            </p>
+                            <button className="btn project-two-button">Saber mais</button>
+                        </div>
                     </div>
                 </div>
                 <div className="projects-page-link">
-                    <a href='#!'>View more projects</a>
+                    <button className='btn'>View more projects</button>
                 </div>
             </div>
         </div>

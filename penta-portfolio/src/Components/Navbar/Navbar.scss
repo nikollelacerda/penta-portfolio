@@ -5,12 +5,15 @@ nav {
 }
 
 ul {
+
+    margin-right:50px;
     li a {
         color:black;
         letter-spacing: 1px;
         font-family:$text-font;
-        margin-right:50px;
+        padding-top:5px;
     }
+    
 }
 
 .logo-img {
