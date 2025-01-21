@@ -47,7 +47,7 @@ const Projects = () => {
 
     return (
       <div className="projects container">
-        <h3>PROJECTS</h3>
+        <h3>projects</h3>
         <div className="row">
           {projects.length === 0 ? (
             <p className="center-align">No projects found</p>
@@ -73,7 +73,7 @@ const Projects = () => {
                   </div>
                   <div className="card-action">
                     <button 
-                      className="btn custom-black-btn"
+                      className="btn"
                       onClick={() => handleOpenModal(project)}
                     >Ver Detalhes</button>
                   </div>

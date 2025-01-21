@@ -1,6 +1,7 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import './FeatureProjects.scss';
+import { Link } from 'react-router-dom';
 
 const FeatureProjects = () => {
     return (
@@ -47,7 +48,7 @@ const FeatureProjects = () => {
                     </div>
                 </div>
                 <div className="projects-page-link">
-                    <button className='btn'>View more projects</button>
+                    <Link to="/projects" className='btn'>View more projects</Link>
                 </div>
             </div>
         </div>

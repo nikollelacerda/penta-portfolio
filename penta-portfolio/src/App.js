@@ -6,7 +6,6 @@ import ParallaxDiv from './Components/ParallaxDiv/ParallaxDiv';
 import Footer from './Components/Footer/Footer';
 import { Route, Router, Routes } from 'react-router-dom';
 import Projects from './Components/Projects/Projects';
-import ProjectsDetails from './Components/ProjectsDetails/ProjectsDetails';
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
           }  
         />
         <Route path="/projects" element={<Projects/>}/>
-        <Route path="/projects/:id" element={<ProjectsDetails/>}></Route>
       </Routes>
       <Footer/>
     </>
