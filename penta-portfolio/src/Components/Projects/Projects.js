@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Projects.scss';
+import M from 'materialize-css/dist/js/materialize.min.js';
 
 const dummyProjects = [
     {
@@ -30,6 +31,19 @@ const dummyProjects = [
 
 const Projects = () => {
     const [projects] = useState(dummyProjects);
+    const [selectedProject, setSelectedProject] = useState(null);
+
+    useEffect(() => {
+      const modals = document.querySelectorAll('.modal');
+      M.Modal.init(modals);
+    }, []);
+
+    const handleOpenModal = (project) => {
+      setSelectedProject(project);
+      const modalElement = document.querySelector('#modal1');
+      const instance = M.Modal.getInstance(modalElement);
+      instance.open();
+    };
 
     return (
       <div className="projects container">
@@ -51,11 +65,6 @@ const Projects = () => {
                   <div className="card-stacked">
                     <div className="card-content">
                       <h5>{project.name}</h5>
-                      <p>{project.description}</p>
-                      <p>
-                        <strong>Status: </strong> 
-                        {project.status}
-                      </p>
                       <p>
                         <strong>Etiqueta: </strong> 
                         {project.label}
@@ -63,12 +72,34 @@ const Projects = () => {
                     </div>
                   </div>
                   <div className="card-action">
-                    <button className="btn custom-black-btn">Ver Detalhes</button>
+                    <button 
+                      className="btn custom-black-btn"
+                      onClick={() => handleOpenModal(project)}
+                    >Ver Detalhes</button>
                   </div>
                 </div>
               </div>
             ))
           )}
+        </div>
+        <div id="modal1" className="modal">
+          <div className="modal-content">
+              {selectedProject && (
+                <>
+                  <h3>{selectedProject.name}</h3>
+                  <p>{selectedProject.description}</p>
+                  <a className="btn project-link">projetoLink.com</a>
+                </>
+            )}
+          </div>
+          <div className="modal-footer">
+              <button
+                href="#!"
+                className="btn custom-black-btn modal-close"
+                >
+                  Fechar
+                </button>
+          </div>
         </div>
       </div>
     );
