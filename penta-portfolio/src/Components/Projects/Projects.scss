@@ -1,54 +1,51 @@
+$title-font: "Lexend Giga", serif;
+$text-font: "Quicksand", serif;
+
 .projects {
-    padding: 20px;
-  }
-  
-  .projects-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .project-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .project-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .project-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
-  
-  .project-card h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-  }
-  
-  .project-card p {
-    font-size: 1em;
-    color: #555;
-  }
-  
-  .project-card button {
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .project-card button:hover {
-    background-color: #0056b3;
+    margin-top: 40px;
+
+    h2 {
+      font-family: $title-font;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .card{
+      .projects-img {
+        width:200px;
+        height:200px;
+        object-fit: cover;
+      }
+    }
+    
+    .card-content {
+      h5 {
+        font-size:1.5rem;
+        font-weight:bold;
+        margin-bottom: 10px;
+        font-family: $title-font;
+      }
+    
+      p {
+        margin:5px 0;
+        font-family:$text-font;
+    
+        strong {
+          color:#333;
+        }
+      }
+    }
+
+    .card-action {
+      .custom-black-btn {
+        background-color: #000;
+        color:#fff;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color:#444;
+        }
+      }
+    }
   }
   

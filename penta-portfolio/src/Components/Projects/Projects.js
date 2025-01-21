@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Projects.scss';
 
 const dummyProjects = [
     {
@@ -7,7 +8,7 @@ const dummyProjects = [
       description: 'Descrição do projeto 1',
       status: 'Em andamento',
       label: 'Tecnologia',
-      image: 'https://via.placeholder.com/150', // Exemplo de imagem
+      image: '/images/projectDetails/projectsDetailsImg1.png', // Exemplo de imagem
     },
     {
       id: 2,
@@ -15,7 +16,7 @@ const dummyProjects = [
       description: 'Descrição do projeto 2',
       status: 'Concluído',
       label: 'Marketing',
-      image: 'https://via.placeholder.com/150', // Exemplo de imagem
+      image: '/images/projectDetails/projectsDetailsImg2.png', // Exemplo de imagem
     },
     {
       id: 3,
@@ -23,7 +24,7 @@ const dummyProjects = [
       description: 'Descrição do projeto 3',
       status: 'A fazer',
       label: 'Design',
-      image: 'https://via.placeholder.com/150', // Exemplo de imagem
+      image: '/images/projectDetails/projectsDetailsImg3.png', // Exemplo de imagem
     },
   ];
 
@@ -31,20 +32,40 @@ const Projects = () => {
     const [projects] = useState(dummyProjects);
 
     return (
-      <div className="projects">
-        <h2>Meus Projetos</h2>
-        <div className="projects-list">
+      <div className="projects container">
+        <h3>PROJECTS</h3>
+        <div className="row">
           {projects.length === 0 ? (
-            <p>No projects found</p>
+            <p className="center-align">No projects found</p>
           ) : (
             projects.map((project) => (
-              <div key={project.id} className="project-card">
-                <img src={project.image} alt={project.name} />
-                <h3>{project.name}</h3>
-                <p>{project.description}</p>
-                <p><strong>Status:</strong> {project.status}</p>
-                <p><strong>Etiqueta:</strong> {project.label}</p>
-                <button>Ver Detalhes</button>
+              <div key={project.id} className="col s12 m6">
+                <div className="card horizontal">
+                  <div className="card-image">
+                    <img 
+                      src={project.image} 
+                      alt={project.name}
+                      className='responsive-img projects-img'
+                    />
+                  </div>
+                  <div className="card-stacked">
+                    <div className="card-content">
+                      <h5>{project.name}</h5>
+                      <p>{project.description}</p>
+                      <p>
+                        <strong>Status: </strong> 
+                        {project.status}
+                      </p>
+                      <p>
+                        <strong>Etiqueta: </strong> 
+                        {project.label}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="card-action">
+                    <button className="btn custom-black-btn">Ver Detalhes</button>
+                  </div>
+                </div>
               </div>
             ))
           )}
